@@ -11,7 +11,11 @@ export default class SolarSystem extends Component {
         <span>
           {
             planets.map(({ name, image }) => (
-              <PlanetCard key={ name } planetName={ name } planetImage={ image } />
+              <PlanetCard
+                key={ name }
+                planetName={ name }
+                planetImage={ image }
+              />
             ))
           }
         </span>
